@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+				box-sizing: border-box;
+				margin: 0;
+}
+
+body {
+				background: linear-gradient(to top left, #642D6B, #B1282F);
+				height: 100vh;
+				font-family: 'Nunito', sans-serif;
+}
+
+main {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-top: 100px;
+}
+
+.player {
+				width: 450px;
+				height: 540px;
+				background-color: #B16F89;
+}
+
+.player__active {
+				background-color: #D7A3AF;
+}
+
+.player-heading {
+				font-size: 2.8rem;
+				font-weight: 500;
+				text-transform: uppercase;
+				text-align: center;
+				margin-top: 1.3em;
+}
+
+.player-score {
+				font-size: 4.5rem;
+				text-align: center;
+				color: #C02F58;
+				margin-top: 18px;
+}
+
+.current {
+				width: 200px;
+				height: 120px;
+				background-color: #C02F58;
+				border-radius: 12px;
+				margin: 100px auto;
+}
+
+.current__heading {
+				color: white;
+				text-transform: uppercase;
+				font-size: 1rem;
+				text-align: center;
+				padding-top: 20px;
+}
+
+.current__score {
+				color: white;
+				font-size: 2rem;
+				text-align: center;
+				margin-top: 12px;
+}
+
+.btn {
+				position: absolute;
+				text-transform: uppercase;
+				background-color: rgba(255, 255, 255, 0.8);
+				border: none;
+				padding: 8px 20px;
+				border-radius: 18px;
+				font-size: 1.1rem;
+}
+
+.btn:active {
+				transform: translateY(4px);
+}
+.btn__new-game {
+				top: 0;
+				margin-top: 30px;
+}
+
+.btn__roll {
+				bottom: 0;
+				margin-bottom: 130px;
+}
+
+.btn__hold {
+				bottom: 0;
+				margin-bottom: 80px;
+}
+
+.dice {
+				width: 100px;
+				position: absolute;
+				top: 140px;
+}
+
+.hidden {
+				display: none;
+}
+
+.player__winner {
+				background-color: #2f2f2f;
+}
+
+.player__winner .player-heading {
+				color: #C02F58;
+				font-weight: bolder;
+}
